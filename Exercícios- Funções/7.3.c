@@ -8,6 +8,7 @@ int main(){
     float numeros[10] = {1};
     float maiores[5];
     int j = 0;
+    int k = 0;
 
     for(int i = 0; i < 10; i=i+2){
             do{
@@ -27,10 +28,13 @@ int main(){
 
             maiores[j++] = maiorNumero(numeros[i], numeros[i+1]);
     }
-
-
-    for(int j = 0; j < 10; j++){
-        printf("%f", numeros[j]);
+    for(int j = 0; j < 10; j = j +2){
+        if(maiores[k] == -1.00){
+           printf("%.2f, %.2f: Eles sao iguais\n", numeros[j], numeros[j+1]);
+        } else{
+            printf("%.2f, %.2f: O maior valor e %.2f\n", numeros[j], numeros[j+1], maiores[k]);
+        }
+        k++;
     }
 
     return 0;
@@ -39,7 +43,9 @@ int main(){
 float maiorNumero(float n1, float n2){
     if(n1 > n2){
         return n1;
-    } else {
-        return n2
+    } else if(n1 < n2){
+        return n2;
+    } else { 
+        return -1.00;
     }
 }
