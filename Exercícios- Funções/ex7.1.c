@@ -14,7 +14,7 @@ int main(){
     }
 
     for(int i = 0; i < 5; i++){
-        printf("absoluto(%d) = %d", array[i], array1[i]);
+        printf("absoluto(%d) = %d\n", array[i], array1[i]);
     }
 
 
