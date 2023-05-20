@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int calculaDigito(int n);
 
@@ -10,7 +9,6 @@ int main(){
     scanf("%d", &n);
 
     printf("Digito verificador de %d: %d", n, calculaDigito(n));
-
 
     return 0;
 }
