@@ -18,6 +18,8 @@ int main(){
     trocar(&n1, &n2);
 
     printf("Depois:\n    n1: %d\n    n2: %d", n1, n2);
+
+    return 0;
 }
 
 void trocar( int *n1, int *n2 ){

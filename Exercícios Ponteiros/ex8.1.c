@@ -17,6 +17,8 @@ int main(){
 
     printf("Somatorio: %.2f\n", s);
     printf("Media: %.2f", m);
+
+    return 0;
 }
 
 void somatorioMedia(float a[], int n, float *somatorio, float *media){

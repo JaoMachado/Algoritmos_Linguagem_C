@@ -15,6 +15,8 @@ int main(){
     decompoeTempo(totalSeg, &horas, &minutos, &seg);
 
     printf("%d  segundo(s) corresponde(m) a:\n    %d hora(s)\n    %d minuto(s)\n    %d segundo(s)", totalSeg, horas, minutos, seg);
+
+    return 0;
 }
 
 void decompoeTempo( int totalSeg, int *horas, int *minutos, int *seg ){
