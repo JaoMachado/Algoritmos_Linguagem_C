@@ -4,7 +4,6 @@
 int main(){
     int array[10];
     int posicao;
-    int atual;
 
     for(int i = 0; i < 10; i++){
         printf("array[%d]: ", i);
@@ -20,10 +19,8 @@ int main(){
 
     } while(posicao > 9);
 
-    atual = posicao;
-
     for(int i = posicao + 1; i < 10; i++){
-        array[atual++] = array[i];
+        array[i-1] = array[i];
     }
 
     for(int i = 0; i < 9; i++){
