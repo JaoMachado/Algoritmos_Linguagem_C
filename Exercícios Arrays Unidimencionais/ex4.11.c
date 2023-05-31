@@ -4,7 +4,7 @@
 int main(){
     int qtd;
     int array[10];
-    int atual = 4;
+    int atual;
     int valor;
 
     for(int i = 0; i < 100000; i++){
@@ -21,6 +21,8 @@ int main(){
         printf("array[%d]: ", i);
         scanf("%d", &array[i]);
     }
+
+    atual = qtd - 1;
 
     for(int i = qtd; i > 0; i--){
         array[i] = array[atual--];

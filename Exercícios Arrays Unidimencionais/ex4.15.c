@@ -16,7 +16,7 @@ int main(){
         scanf("%d", &array1[i]);
     }
 
-    for(int i=0; i < 5;i++){
+    for(int i = 0; i < 5; i++){
         for(int j=0;j < 5;j++){
             if(array[i] == array1[j]){
                 arrayInterseccao[cont++] = array[i];

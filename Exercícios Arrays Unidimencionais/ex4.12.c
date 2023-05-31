@@ -10,7 +10,7 @@ int main(){
         scanf("%d", &array[i]);
     }
 
-    for(int i = 0; i<4 ;i++){
+    for(int i = 0; i < 4 ; i++){
         array[i] = array[atual++];
         printf("array[%d] = %d\n", i, array[i]);
     }

@@ -6,7 +6,7 @@ int main(){
     int somatorio;
     int array[5];
     int array1[5];
-    int atual=0;
+    int atual = 0;
 
     for(int i=0; i<5; i++){
         printf("Digite um número para posição %d", i);

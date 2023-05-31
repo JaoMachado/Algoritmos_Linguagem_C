@@ -18,7 +18,7 @@ int main(){
             printf("Posicao invalida, forneca novamente!");
         }
 
-    } while(posicao > 9);
+    } while(posicao > 9 || posicao < 0);
 
     atual = posicao;
 

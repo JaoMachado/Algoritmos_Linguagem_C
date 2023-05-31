@@ -12,8 +12,8 @@ int main(){
     }
 
     for(int i=0; i<5; i++){
-        somatorio = somatorio + array[i];
-        produtorio = produtorio * array[i];
+        somatorio +=  array[i];
+        produtorio *= array[i];
     }
 
     printf("Somatorio: %.2f\n", somatorio);
