@@ -37,5 +37,6 @@ void imprimeDuplaClassificada(int n1, int n2, bool emOrdemCrescente){
         } else {
             printf("%d e %d: %d >= %d\n", n1, n2, n2, n1);
         }
+        
     }
 }
