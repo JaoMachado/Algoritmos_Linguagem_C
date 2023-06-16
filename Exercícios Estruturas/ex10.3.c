@@ -37,5 +37,5 @@ Hora gerarHora( int quantidadeSegundos ){
 }
 
 void imprimirHora( const Hora *hora ){
-    printf("\n%02d:%02d:%02d", hora->horas, hora->minutos, hora->segundos);
+    printf("\nHora correspondente: %02d:%02d:%02d", hora->horas, hora->minutos, hora->segundos);
 }
