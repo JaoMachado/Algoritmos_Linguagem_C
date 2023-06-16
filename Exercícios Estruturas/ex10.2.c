@@ -31,7 +31,7 @@ int main() {
 }
 
 bool ehBissexto( int ano ){
-    if(ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0){
+    if((ano % 400 == 0 || ano % 4 == 0) && ano % 100 != 0){
         return true;
     }
     return false;
@@ -41,15 +41,15 @@ int diaDoAno( const Data *data ){
     int diasPorMes[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int diaAno = 0;
 
-    if(ehBissexto(data -> ano)){
+    if(ehBissexto(data->ano)){
         diasPorMes[1] = 29;
     }
 
-    for(int i = 0; i < data -> mes - 1; i++){
+    for(int i = 0; i < data->mes - 1; i++){
         diaAno += diasPorMes[i];
     }
 
-    diaAno += data -> dia;
+    diaAno += data->dia;
 
     return diaAno;
 

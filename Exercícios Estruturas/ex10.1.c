@@ -51,17 +51,17 @@ int main() {
 }
 
 int compararData( const Data *d1, const Data *d2 ){
-    if(d1 -> ano < d2 -> ano){
+    if(d1->ano < d2->ano){
         return -1;
-    } else if (d1 -> ano > d2 -> ano){
+    } else if (d1->ano > d2->ano){
         return 1;
-    } else if (d1 -> mes > d2 -> mes){
+    } else if (d1->mes > d2->mes){
         return -1;
-    } else if (d1 -> mes > d2 -> mes){
+    } else if (d1->mes > d2->mes){
         return 1;
-    } else if (d1 -> dia > d2 -> dia){
+    } else if (d1->dia > d2->dia){
         return -1;
-    } else if (d1 -> dia > d2 -> dia){
+    } else if (d1->dia > d2->dia){
         return 1;
     } else {
         return 0;
