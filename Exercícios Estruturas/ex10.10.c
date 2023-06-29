@@ -1,4 +1,3 @@
-// Código feito por Aloísio M. Lingo Filho BV3032558
 #include <stdio.h>
 #include <stdlib.h>
 
