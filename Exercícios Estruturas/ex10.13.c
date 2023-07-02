@@ -23,21 +23,21 @@ int main() {
     int y;
 
     printf("Ponto superior esquerdo\n");
-    printf("x: ");
+    printf("    x: ");
     scanf("%d", &p1.x);
-    printf("y: ");
+    printf("    y: ");
     scanf("%d", &p1.y);
     
     printf("\nPonto superior esquerdo\n");
-    printf("x: ");
+    printf("    x: ");
     scanf("%d", &p2.x);
-    printf("y: ");
+    printf("    y: ");
     scanf("%d", &p2.y);
 
     printf("Mover em x: ");
     scanf("%d", &x);
 
-    printf("Mover em y: \n");
+    printf("Mover em y: ");
     scanf("%d", &y);
 
     r = novoRetangulo(&p1, &p2);
